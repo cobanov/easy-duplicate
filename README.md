@@ -1,10 +1,21 @@
 # easy-duplicate
+It compares the files in a folder with md5 checksums and deletes duplicate files or moves them to the desired folder.
 
-this repo is not ready for anything, it's just a quick script that will be rewritten very soon. (a script written with one eye open at midnight)
+## Requirements
 
 ```
-- cli integration
-- functional structure
-- and incredible additional features
+pip install -r requirements.txt
 ```
-just give me a week...
+
+## Usage
+```
+python duplicate.py ./path_to_folder
+```
+```
+Usage: duplicate.py [OPTIONS] [FOLDER_PATH]
+
+Options:
+  -R, --remove BOOLEAN  remove files instead of move
+  -L, --log BOOLEAN     export records of actions
+  --help                Show this message and exit.
+```
